@@ -1,0 +1,142 @@
+body{
+    background: #f1f1f1;
+    color: rgb(34,34 , 34);
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    background: #fff; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 999px; 
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); 
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    height: 8%;
+    margin: 0 auto;
+    padding: 10px 25px;  
+    background: #e00000;  
+    color: #f1f1f1;  
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+#title2{
+    padding-left: 15%;
+    font-size: 40px;
+}
+
+div{
+    justify-content: space-between;
+}
+
+ul{
+    padding-top: 0%;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color:  #f1f1f1;
+}
+
+a:hover{
+    color: rgb(34,34,34);
+    transition: 0.3s all;
+    font-weight: bold;
+    border: 2px solid #f1f1f1;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+}
+
+#isadoravieira{
+    color: rgb(34,34,34);
+    transition: 0.3s all;
+    font-weight: bold;
+    border: 2px solid #f1f1f1;
+    padding: 15px;
+    border-radius: 24px;
+    background-color: #f1f1f1;
+    padding-right: 60px;
+    text-align: center;
+}
+
+main{
+    padding-top: 5%;
+    text-align: justify;    
+}
+
+aside{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+article{
+    text-align: center;
+}
+
+h3{
+    color: #e00000;
+    font-size: 30px;
+    line-height: 10px;
+    padding-top: 50px;
+}
+
+h2{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#ultimo{
+    padding-bottom: 50px;
+}
+
+footer{
+    background: #fff; 
+    right: 0%;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 999px; 
+    /*box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.footer{
+    height: 5%;
+    margin: 0 auto;
+    padding: 10px 16px; 
+    background: #e00000;  
+    color: #f1f1f1;  
+}
