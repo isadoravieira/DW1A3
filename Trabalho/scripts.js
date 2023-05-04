@@ -1,5 +1,4 @@
 
-
 const Modal = {
     open(){
         // Abrir modal
@@ -208,7 +207,7 @@ date: document.querySelector('input#date'),
             Modal.close()
             
         } catch (error){
-            alert(error.message)
+            ModalError.open()
         }     
         
     },
@@ -231,6 +230,25 @@ const App = {
         App.init()
     },
 }
+
+const ModalError = {
+    open(){
+        // Abrir modal
+        //Adicionar a classe active ao modal
+        document
+            .querySelector('.modal-overlay-error')
+            .classList
+            .add('active')
+    },
+    close(){
+        // Fechar modal
+        //Remover a classe active do moadal
+        document
+            .querySelector('.modal-overlay-error')
+            .classList
+            .remove('active')
+    }
+} 
 
 App.init() 
 
