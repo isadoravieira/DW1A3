@@ -1,0 +1,33 @@
+/* Define a fonte padrão para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo do cabeçalho principal */
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo dos links */
+  a {
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    
+  }
+
+  /*div{
+    text-align: justify;
+    
+    border: #333 solid;
+  }*/
+  
+  /* Quando o link é passado com o mouse */
+  a:hover {
+    color: #666;
+  }
