@@ -1,0 +1,252 @@
+:root{
+    --background: #f0f2f5; 
+    --rosa-neon:  #FF005C;
+    --branco: white;
+    --cinza-escuro: rgb(34,34,34);
+    --amarelo: #FDDE02;
+    --azul-claro: #0185B8;
+}
+
+/*GLOBAL****************************************************************/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--cinza-escuro);
+    font-family: 'Poppins', sans-serif;
+    /*width: 100%;
+    height: 100%;*/
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/*CABEÇALHO*************************************************************/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;   
+    width: 100%;
+    padding: 5px;
+    padding-right: 100px;
+   
+    /*position: fixed;*/
+}
+
+#logo{
+    font-family: 'Titan One', cursive;
+    color: var(--rosa-neon);
+}
+
+div{
+    margin-left: 5%;
+}
+
+#checkbox{
+    margin-right: 2%;
+}
+
+/*#logo img{
+    margin-top: 50px;
+
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+}*/
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color:  var(--cinza-escuro);
+}
+
+a:hover{
+    color: var(--branco);
+    transition: 0.3s all;
+    font-weight: bold;
+    border: 2px solid var(--cinza-escuro);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--cinza-escuro);
+}
+
+/*MAIN******************************************************************/
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    height: 76vh;    
+    justify-content:space-around;
+}
+
+h1{
+    font-size: 40px;
+    
+}
+
+#welcome{
+    
+    font-size: 56px;
+   /* line-height: 10px;*/
+    
+}
+
+#welcome:hover{
+    color: var(--rosa-neon);
+    font-size: 56px;
+   /* line-height: 10px;*/
+   transition: 0.3s all;
+    
+}
+
+#welcome2:hover{
+    color: var(--azul-claro);
+    transition: 0.3s all;
+}
+
+#welcome3:hover{
+    color: var(--amarelo);
+    transition: 0.3s all;
+}
+
+h3{
+    font-size: 40px;
+    line-height: 55px;
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    text-align: justify;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    line-height: 40px ;
+}
+
+aside{
+    margin-left: 5%;
+}
+
+article{
+    margin-left: 5%;
+}
+
+/*BOTÕES*******************************************************************/
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: var(--rosa-neon); 
+    color: var(--branco);
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 13px;
+    font-size: 15px;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+    background-color: var(--amarelo); 
+    color: var(--branco);
+    font-weight: bold;
+    transition: 0.3s all;
+    
+}
+
+/*CATEGORIAS E SECTIONS***********************************************/
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    display: flex;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /*justify-content: center;
+    align-items: center;*/
+}
+
+.text h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.text p{
+    text-align: center;
+}
+
+
+
+.content{
+
+    display: grid;
+    /*grid-template-areas: 
+    "div div div" 
+    "div div div";*/
+
+    /*grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;*/
+
+    grid-template-columns: 1fr 1fr 1fr;
+   
+    grid-auto-rows: 200px;
+    gap: 10px;
+    
+}
+
+.content > div{
+    background: var(--cinza-escuro);
+    color: var(--branco);
+    font-size: 20px;
+    text-align: center;
+    align-items: end;
+    border-radius: 20px;
+}
+
+.content > div:hover{
+    background: var(--rosa-neon, --azul-claro, --amarelo);
+    color: var(--branco);
+    font-size: 20px;
+    text-align: center;
+    align-items: end;
+    border-radius: 20px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.categoriesBox h3{
+    font-size: 20px;
+    align-items: end;
+}
+
+
+/* FOOTER ****************************************************************/
+footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0 2rem;
+    color: var(--cinza-escuro);
+    opacity: 0.6;
+}
+
+
+
