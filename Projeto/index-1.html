@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorVerse - Animais</title>
+    <link rel="icon" href="./assets/icons/1.png">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+
+          
+
+</head>
+<body>
+
+    <header>
+
+        <!--cabeçalho-->
+        
+        
+        <!--<img src="./assets/Logo ColorVerse.svg" alt="paleta de pintura com pincéis" width="100px">-->
+            
+        <div id="logo">
+            <h1>ColorVerse</h1>
+        </div>
+        
+
+        <div id="cabecalho">
+            <ul>
+                <a href="./index.html" ><li>Home</li></a>
+                <a href="./index.html"  class="linkHeader" ><li>Categorias</li></a>
+                 
+                <!--<a href=""><li>Minhas Paletas</li></a> -->            
+            </ul>
+        </div>
+
+        <!--futuramente será o dark mode
+        <div class="checkbox">
+            <label for="switch">
+                <input type="checkbox" name="" id="switch"> 
+            </label>
+        </div>
+        -->
+
+    </header>
+
+    <main>
+      <aside class="screen-palete"> 
+        
+
+        <div class="opitions">     
+
+            
+              <label for="colorPicker">Cor:</label>
+              
+              <input type="color" id="colorPicker" class="colorPicker" value="#FDDE02">
+            
+                        
+            
+              <label for="brushSize">Pincel:</label>
+              <input type="range" class="btnEraser" id="brushSize" value="5" min="1" max="20">
+            
+
+            
+              
+              <button id="toggleEraser" class="red">Borracha</button>
+              
+              <label for="eraserSize">Tamanho </label>
+              <label for="eraserSize">Borracha:</label>
+              <input type="range" id="eraserSize" min="1" max="20" value="5">
+            
+            
+            <!--
+            <form action="">
+              <button id="saveButton">Salvar Desenho</button>
+            </form>
+            -->           
+
+          </div>       
+
+        </div> 
+
+      </aside>
+
+      <article>
+
+      
+        <div>
+          <canvas class="screen" id="canvas">
+          
+          </canvas>
+        </div>
+      
+
+        </article>
+
+        <div class="slider">
+
+          <div class="slides">
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+
+            <div class="slide first">
+              <img class="carousel-image" src="./animais/1.png" alt="desenho-cavalo">
+            </div>
+
+            <div class="slide">
+              <img class="carousel-image" src="./animais/10.png" alt="desenho-girafa">
+            </div>
+
+            <div class="slide">
+              <img class="carousel-image" src="./animais/3.png" alt="desenho-baleia">
+            </div>
+
+            <div class="slide">
+              <img class="carousel-image" src="./animais/4.png" alt="desenho-jacare">
+            </div>
+
+            <div class="slide">
+              <img class="carousel-image" src="./animais/5.png" alt="desenho-passaro">
+            </div>
+
+            <div class="navigation-auto">
+
+              <div class="auto-btn1"></div>
+
+              <div class="auto-btn2"></div>
+
+              <div class="auto-btn3"></div>
+
+              <div class="auto-btn4"></div>
+
+              <div class="auto-btn5"></div>
+
+            </div>
+
+          </div>
+
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+          </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+      <p>
+          <a href="https://github.com/isadoravieira" target="_blank"><li>@isadoravieira</li></a>
+      </p>
+  </footer>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

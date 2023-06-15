@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColorVerse</title>
+    <link rel="icon" href="./assets/icons/1.png">
     <link href="./style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+
+    
 </head>
 
 <body>
@@ -30,18 +33,20 @@
 
         <div id="cabecalho">
             <ul>
-                <a href="#categories"><li>Categorias</li></a>
-                <a href=""><li>Meus Desenhos</li></a> 
-                <a href=""><li>Minhas Paletas</li></a>               
+                <a href="./index.html"><li>Home</li></a>
+                <a href="#categories" class="linkHeader"><li>Categorias</li></a>
+                 
+                <!--<a href=""><li>Minhas Paletas</li></a>  -->             
             </ul>
         </div>
 
-        <!--futuramente será o dark mode-->
+        <!--futuramente será o dark mode
         <div class="checkbox">
             <label for="switch">
                 <input type="checkbox" name="" id="switch"> 
             </label>
         </div>
+        -->
 
     </header>
 
@@ -57,15 +62,15 @@
                 O ColorVerse é o convite perfeito para um encontro com a imaginação e a diversão. Então, relaxe enquanto as cores fluem na ponta dos seus dedos e embarque em uma jornada de criatividade e expressão artística.
             </p>
 
-            <form action="">
-                <input type="submit" value="Iniciar">
+            <form action="#categories">
+                <input href="" type="submit" value="Iniciar">
             </form>
 
         </aside>
 
         <article>
             <!--adicionar imagem sgv-->
-            <img src="./assets/bannergirl (500 × 1000 px).svg" alt="" width="" height="580px">
+            <img src="./assets/bannergirl(500x800).png" alt="" width="" height="500px">
             
         </article>
 
@@ -80,35 +85,48 @@
 
         <div class="content">
 
-            <div class="categoriesBox">
-                <img src="" alt=""> <!--colocar imagens referentes ao significado da categoria-->
-                <h3>Animais</h3>
-            </div>
+            <!--ARRUMAR ISSO -> TA SUPOSTAMENTE ARRUMADO   -->
+            <a href="./index-1.html" target="_blank">
+                <div class="categoriesBox">                
+                    <img src="./assets/frango.png" alt="" height="100px"> <!--colocar imagens referentes ao    significado da categoria-->
+                    <h3>Animais</h3>
+                </div>
+            </a>
         
-            <div class="categoriesBox">
-                <img src="" alt="">
-                <h3>Fantasia</h3>
-            </div>
+            <a href="./index-2.html" target="_blank">
+                <div class="categoriesBox">
+                    <img src="./assets/dragao.png" alt="" height="100px">
+                    <h3>Fantasia</h3>
+                </div>
+             </a>
 
-            <div class="categoriesBox">
-                <img src="" alt="">
-                <h3>Mitologia</h3>
-            </div>
+            <a href="./index-3.html" target="_blank">
+                <div class="categoriesBox">
+                    <img src="./assets/medusa.png" alt="" height="100px">
+                    <h3>Mitologia</h3>
+                </div>
+            </a>
 
-            <div class="categoriesBox">
-                <img src="" alt="">
-                <h3>Monumentos</h3>
-            </div>
+            <a href="./index-4.html" target="_blank">
+                <div class="categoriesBox">
+                    <img src="./assets/arquitetura.png" alt="" height="100px">
+                    <h3>Monumentos</h3>
+                </div>
+            </a>
 
-            <div class="categoriesBox">
-                <img src="" alt="">
-                <h3>Natureza</h3>
-            </div>
+            <a href="./index-5.html" target="_blank">
+                <div class="categoriesBox">
+                    <img src="./assets/natureza.png" alt="" height="100px">
+                    <h3>Natureza</h3>
+                </div>
+            </a>
 
-            <div class="categoriesBox">
-                <img src="" alt="">
-                <h3>Terror</h3>
-            </div>
+            <a href="./index-6.html" target="_blank">
+                <div class="categoriesBox">
+                    <img src="./assets/zumbi.png" alt="" height="100px">
+                    <h3>Terror</h3>
+                </div>
+            </a>
 
         </div>
 
@@ -116,7 +134,7 @@
 
     <footer>
         <p>
-            <a href="">@isadoravieira</a>
+            <a href="https://github.com/isadoravieira" target="_blank"><li>@isadoravieira</li></a>
         </p>
     </footer>
     
