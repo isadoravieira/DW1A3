@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //TAMANHO DA BORRACHA ////////////////////////////////////////////////////////////////////////////////////////////
     const eraserSizeInput = document.querySelector('#eraserSize');
   
-    eraserSizeInput.addEventListener('input', () => {
+    eraserSizeInput.addEventListener('change', () => {
       const eraserSize = parseInt(eraserSizeInput.value);
       context.lineWidth = eraserSize; // Define a largura da linha para o tamanho selecionado no input de tamanho da borracha
     });
